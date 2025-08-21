@@ -1,0 +1,49 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.footer {
+  display: flex;
+  justify-content: space-between; /* Distribuye columnas uniformemente */
+  align-items: flex-start;
+  padding: 2rem 1rem;
+  background: #222;
+  color: #fff;
+  gap: 2rem;
+
+}
+
+.footer__columna {
+  flex: 1;                 /* Las 3 columnas ocupan el mismo espacio */
+  padding: 0 1rem;
+}
+
+.footer__titulo {
+  font-size: 1.2rem;
+  margin-bottom: 1rem;
+}
+
+.footer__lista {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footer__item {
+  margin-bottom: 0.5rem;
+}
+
+.footer__item a {
+  color: #4b7bec;
+  text-decoration: none;
+}
+
+.footer__item a:hover {
+  text-decoration: underline;
+}
+
+.footer__texto {
+  font-size: 1rem;
+  line-height: 1.5;
+}
