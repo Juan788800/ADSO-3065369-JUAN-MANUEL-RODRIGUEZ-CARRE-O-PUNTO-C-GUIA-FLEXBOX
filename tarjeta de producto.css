@@ -1,0 +1,68 @@
+/* Resetea los márgenes y rellenos por defecto de todos los elementos */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* Contenedor principal que envuelve las tarjetas de producto.
+ flexbox para centrar horizontal y verticalmente las tarjetas,
+    */
+.caja_tarjeta_producto {
+    display: flex;
+    justify-content: center;  /* Centra horizontalmente */
+    align-items: center;      /* Centra verticalmente */
+    height: 100vh;            /* Altura */
+}
+
+/* Estilo para cada tarjeta de producto  */
+.tarjeta_producto {
+    display: flex;
+    flex-direction: column;   /* Organiza elementos hijos verticalmente */
+    align-items: center;      /* Centra horizontalmente contenido interno */
+    background-color: #f8f8f8; /* Color de fondo gris claro */
+    border: 3px solid #140000; /* Borde sólido oscuro alrededor */
+    border-radius: 8px;       /* Bordes redondeados */
+    padding: 1rem;            /* Espacio interno alrededor del contenido */
+    width: 300px;             /* Ancho fijo para cada tarjeta */
+}
+
+/* Imagen dentro de la tarjeta */
+.tarjeta_producto__imagen {
+    width: 100%;              /* La imagen ocupa todo el ancho de la tarjeta */
+    height: auto;             /* Altura ajustada proporcionalmente */
+    border: 3px solid #000000; /* Borde negro alrededor de la imagen */
+    object-fit: cover;        /* La imagen cubre el espacio asignado sin deformarse */
+    margin: 4px;              /* Margen externo pequeño alrededor de la imagen */
+}
+
+/* Descripción del producto */
+.tarjeta_producto__descripcion {
+    text-align: center;       /* Texto centrado */
+    font-size: 1rem;          /* Tamaño de fuente */
+    margin: 0.1rem 0;         /* Margen vertical pequeño arriba y abajo */
+    color: #000000;           /* Color negro para el texto */
+}
+
+/* Precio del producto */
+.tarjeta_producto__precio {
+    font-size: 1rem;          /* Tamaño de fuente estándar */
+    color: #000000;           /* Texto negro */
+    margin: 5px;              /* Margen externo de 5px */
+}
+
+/* Botón de compra */
+.tarjeta_producto__boton {
+    padding: 0.5rem 5rem;     /* Relleno vertical y horizontal */
+    background-color: blueviolet; /* Color de fondo bluevioleta */
+    border: none;             /* Sin borde */
+    color: black;             /* Texto negro */
+    border-radius: 10px;      /* Bordes redondeados del botón */
+    cursor: pointer;          /* Cambia el cursor al pasar por encima */
+    margin: 5px;              /* Margen externo */
+}
+
+/* Efecto hover del botón: cambia color de fondo y texto al pasar el mouse */
+.tarjeta_producto__boton:hover {
+    background-color: rgb(211, 0, 63); /* Rojo oscuro */
+    color: white;            /* Texto blanco */
+}

@@ -1,0 +1,49 @@
+/* Resetea margen y relleno de todos los elementos a 0  */
+*{
+    padding: 0;
+    margin: 0;
+}
+
+/* Estilo principal para el formulario de contacto */
+.contacto_form {
+  display: flex;                 /* Use flexbox para organizar los elementos */
+  flex-direction: column;        /* Apila los elementos verticalmente */
+  gap: 1rem;                    /* Espacio vertical entre los elementos */
+  max-width: 350px;             /* Ancho máximo del formulario */
+  margin: 2rem auto;             /* Margen superior e inferior y centrado horizontal */
+  border: 3px solid #000000;    /* Borde negro grueso alrededor */
+}
+
+/* Cada grupo de etiqueta y campo dentro del formulario */
+.contacto_form_grupo {
+  display: flex;                /* Use flexbox */
+  flex-direction: column;       /* Apila label e input verticalmente */
+  gap: 0.25rem;                /* Espacio pequeño entre label e input */
+}
+
+/* Estilo para las etiquetas (labels) del formulario */
+.contacto_form_label {
+  font-weight: bold;            /* Texto en negrita */
+  text-align: center;           /* Texto centrado dentro del label */
+}
+
+/* Inputs y textarea del formulario */
+.contacto_form_input,
+.contacto_form_textarea {
+  padding: 0.5rem;              /* Espacio interno alrededor del texto */
+  border: 4px solid #aba5ac;   /* Borde gris claro y grueso */
+  border-radius: 23px;          /* Bordes redondeados pronunciados  */
+  text-align: center;           /* Texto centrado dentro del campo */
+}
+
+/* Estilo para el botón de envío */
+.contacto_form_button {
+  padding: 0.5rem;              /* Relleno dentro del botón */
+  background: #4b7bec;          /* Color de fondo azul */
+  color: #fff;                  /* Texto blanco */
+  border: none;                 /* Sin borde */
+  border-radius: 4px;           /* Bordes ligeramente redondeados */
+  font-size: 1rem;              /* Tamaño de letra  */
+  cursor: pointer;             /* Cambia el cursor a puntero  al pasar sobre el botón */
+  margin: 32px;                 /* Margen externo amplio*/
+}

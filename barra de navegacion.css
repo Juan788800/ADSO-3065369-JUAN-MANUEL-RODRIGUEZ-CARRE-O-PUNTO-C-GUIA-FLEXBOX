@@ -1,0 +1,33 @@
+*{
+    margin:0;
+    padding: 0;
+}
+
+.nav{
+    display:flex;
+    justify-content: space-between;
+    background-color: blueviolet;
+    padding: 1rem;
+}
+
+.nav__logo{
+  color: rgb(255, 255, 255);
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.nav__menu {
+  list-style: none;
+  display: flex;
+  margin: 0;
+  padding: 0;
+}
+
+.nav__item {
+  margin-left: 1rem;
+}
+
+.nav__link {
+  color: white;
+  text-decoration: none;
+}

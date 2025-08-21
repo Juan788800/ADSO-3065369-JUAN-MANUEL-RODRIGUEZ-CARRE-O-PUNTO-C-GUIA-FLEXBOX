@@ -1,0 +1,29 @@
+/* Resetea margen y relleno de todos los elementos a 0  */
+*{
+    padding: 0;
+    margin: 0;
+}
+
+/* Contenedor principal de la lista de tareas */
+.lista_de_tareas {
+  list-style: none;          /* Quita las viñetas predeterminadas de lista */
+  display: flex;             /* Utiliza flexbox para organizar contenido */
+  flex-direction: column;    /* Apila los ítems verticalmente */
+  align-items: center;       /* Centra horizontalmente los ítems */
+  gap: 1.5rem;               /* Espacio uniforme entre cada ítem */
+  padding: 0;                /* Sin relleno interno */
+  margin: 2rem auto;         /* Margen vertical y centrado horizontal */
+  max-width: 400px;          /* Ancho máximo de la lista */
+}
+
+/* Estilo para los ítems de la lista*/
+.lista_de_tareas__item {
+  background-color: #eee;                   /* Color de fondo gris claro */
+  padding: 0.75rem 2rem;                    /* Relleno interno para mejor espacio */
+  border-radius: 10px;                      /* Bordes redondeados en las esquinas */
+  width: 100%;                             /* Ocupar todo el ancho del contenedor */
+  max-width: 350px;                        /* Máximo ancho por ítem */
+  text-align: center;                      /* Texto centrado */
+  font-size: 1.1rem;                       /* Tamaño de fuente más grande para leer bien */
+  box-shadow: 0 2px 8px rgba
+}

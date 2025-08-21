@@ -1,0 +1,28 @@
+/* Resetea margen y relleno de todos los elementos a 0  */
+*{
+    padding: 0;
+    margin: 0;
+}
+
+/* Contenedor principal del encabezado de sección */
+.section_header {
+    display: flex;           /* Use flexbox para alinear contenido en fila */
+    align-items: center;     /* Centra verticalmente ícono y texto */
+    gap: 1rem;               /* Espacio entre el ícono y el texto */
+}
+
+/* Estilo para la imagen del ícono dentro del encabezado */
+.section_header__icono img {
+    width: 40px;             /* Ancho fijo de la imagen */
+    height: 40px;            /* Alto fijo de la imagen */
+    object-fit: contain;     /* La imagen se escala  */
+    margin: 1rem;
+}
+
+/* Estilo para el título  del encabezado */
+.section-header__titulo {
+    flex: 1;                 /* Ocupa todo el espacio disponible a la derecha del ícono */
+    text-align: justify;     /* Justifica el texto para alinearlo a ambos lados */
+    margin: 0;               /* Sin margen adicional alrededor del título */
+    font-weight: 600;        /* Texto en negrita  */
+}
